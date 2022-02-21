@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <body>
+    <form>
+        <h1 style="text-align: center;">Form Validation Demo</h1><br>
+        <div>
+            <label for="fname">First Name (5 to 10 characters):</label>
+            <input type="text" id="fname" name="fname" required minlength="5" maxlength="10" pattern="[A-Za-z]" size="20"><br><br>
+            <label for="lname">Last Name (5 to 20 characters):</label>
+            <input type="text" id="lname" name="lname" required minlength="5" pattern="[A-Za-z]" maxlength="20" size="20"><br><br>
+           
+            <p >Gender : </p>
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label><br>
+            <input type="radio" id="male" name="gender" value="Male" >
+            <label for="male">Male</label><br>
+            
+            <p>Choose Languages You Know : </p>
+            <input type="checkbox" id="html" name="html" checked>
+            <label for="html">Html</label><br>
+            <input type="checkbox" id="css" name="css" >
+            <label for="css">CSS</label><br>
+            <input type="checkbox" id="js" name="js" >
+            <label for="js">JavaScript</label><br><br>
+
+            <label for="dob">Birth Date:</label>
+            <input type="date" id="dob" name="trip-start" min="1990-01-01" max="2022-01-01" required><br><br>
+
+            <label for="email">Enter your email:</label>
+            <input type="email" id="email" pattern=".+@gmail\.com" size="30" required><br><br>
+
+            <label for="pass">Password (6 characters minimum):</label>
+            <input type="password" id="pass" name="password" minlength="6" required><br><br>
+
+            <label for="mob">Mobile :</label>
+            <input type="tel" id="mob" pattern="[7-9]{1}[0-9]{9}" minlength="10" maxlength="10" required><br><br>
+
+            <label for="avatar">Choose a profile picture:</label>
+
+            <input type="file" id="profile" name="profile" accept="image/png, image/jpeg"><br><br>
+            <input type="submit" value="submit form">
+            <input type="reset" value="Reset">
+
+        </div>
+    </form>
+    </body>
+</html>
