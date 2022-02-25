@@ -14,7 +14,65 @@
   <input type="submit" value="Submit">
 </form> 
 
+<h2>Form Elements : </h2>
+<h3>&lt; input &gt; and &lt; label &gt;</h3>
+<label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" ><br>
 
+  <h3>&lt; select &gt; </h3>
+  <label for="color">Choose a color:</label>
+  <select id="color" name="color">
+    <option >Red</option>
+    <option >Blue</option>
+    <option>Green</option>
+    <option>Yellow</option>
+  </select>
+  <h3>&lt; textarea &gt; </h3>
+  <textarea name="message" rows="10" cols="30">
+    Write msg here.
+    </textarea>
 
+ <h3>&lt; fieldset &gt; and &lt; legend &gt; </h3>
+    <fieldset>
+        <legend>Choose your favorite Language</legend>
+    
+        <input type="radio">
+        <label for="html">HTML</label><br/>
+    
+        <input type="radio">
+        <label for="css">CSS</label><br/>
+    
+        <input type="radio">
+        <label for="js">JS</label>
+      </fieldset>
+
+      <h3>&lt; datalist &gt; </h3>
+      <label for="ice-cream-choice">Choose a flavor:</label>
+<input list="ice-cream-flavors" id="ice-cream-choice" name="ice-cream-choice" />
+
+<datalist id="ice-cream-flavors">
+    <option value="Chocolate">
+    <option value="Coconut">
+    <option value="Mint">
+    <option value="Strawberry">
+    <option value="Vanilla">
+</datalist>
+
+<h3>&lt; option &gt; and &lt; optgroup &gt;</h3>
+
+<label>Choose a Technology:</label>
+<select>
+    <optgroup label="FrontEnd">
+        <option>HTML</option>
+        <option>js</option>
+        <option>Angular</option>
+    </optgroup>
+    <optgroup label="Backend">
+        <option>.Net</option>
+        <option>c sharp</option>
+        <option>java</option>
+    </optgroup>
+</select>
+<br><br><br>
 </body>
 </html>
