@@ -39,3 +39,26 @@ h1 {
 span {
     background-color: skyblue;
   }
+  input[type] {
+    padding:5px; 
+    border:2px solid rgb(17, 16, 16); 
+     border-radius: 10px;
+}
+input[type=text] {
+    background-color: aqua;
+}
+
+input[type~=email] {
+    background-color: chartreuse;
+}
+input[name ^= f]{
+    color: #f33;
+}
+input[name $= mail]{
+    color:blue;
+}
+
+ol[type="a" i] {
+    list-style-type: lower-alpha;
+    background: lime;
+  }
