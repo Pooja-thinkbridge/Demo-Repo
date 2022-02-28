@@ -62,3 +62,8 @@ ol[type="a" i] {
     list-style-type: lower-alpha;
     background: lime;
   }
+  div span{
+      color:black;
+      background:cornflowerblue;
+
+  }
