@@ -23,6 +23,15 @@ h1 {
 
 }
 
+.red {
+    color: #f33;
+  }
+  
+  .yellow {
+    background: #ffa;
+  }
+  
+
 span {
     background-color: skyblue;
   }
