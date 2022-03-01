@@ -76,3 +76,7 @@ ol[type="a" i] {
   img ~ p {
     background: yellow;
   }
+
+  li + li {
+    color: red;
+  }
