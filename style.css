@@ -72,3 +72,7 @@ ol[type="a" i] {
   div.child > span{
       background-color: red;
   }
+
+  img ~ p {
+    background: yellow;
+  }
