@@ -67,3 +67,8 @@ ol[type="a" i] {
       background:cornflowerblue;
 
   }
+
+
+  div.child > span{
+      background-color: red;
+  }
