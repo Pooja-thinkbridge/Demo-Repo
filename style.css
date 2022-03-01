@@ -80,3 +80,9 @@ ol[type="a" i] {
   li + li {
     color: red;
   }
+
+  col.selected | td {
+    background: gray;
+    color: white;
+    font-weight: bold;
+  }
