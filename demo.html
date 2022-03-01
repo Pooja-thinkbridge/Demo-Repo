@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="style.css" rel="stylesheet">
+    </head>
+<body>
+
+<h1>CSS Example</h1>
+<p>CSS (Cascading Style Sheets) is the code that styles web content.</p>
+<p>Like HTML, CSS is not a programming language. It's not a markup language either. </p>
+<p> CSS is a style sheet language.</p>
+<p>Ruleset of css</p>
+<ul>
+    <li>Selector</li>
+    <li>Declaration</li>
+    <li>Properties</li>
+    <li>Property value</li>
+</ul>
+<p>Type selector Example</p>
+<span>Here's a span with some text.</span>
+<p>Here's a p with some text.</p>
+<span>Here's a span with more text.</span>
+
+<p class="red">Css class selector example</p>
+<p class="yellow">The CSS class selector matches elements based on the contents of their class attribute.</p>
+
+<p id="blue">CSS ID Selector Example</p>
+
+<p>Attribute Selector</p>
+<label>Email : </label>
+<input type="email" name="email"><br><br>
+<label>fname : </label>
+<input type="text" name="fname"> <br><br>
+<label>lname : </label>
+<input type="text" name="lname"> <br><br>
+<ol type="A">
+    <li>Red</li>
+    <li>Yellow</li>
+    <li>Green</li>
+</ol>
+<h2>Combinator </h2>
+<div>
+    <span>Example of descendant combinator </span>
+    <span>:</span>
+    <p>The descendant combinator</p>
+    <span>typically represented by a single space (" ") character </span>
+</div>
+
+<h3>Child Combinator</h3>
+<div class="child">
+    <p>Thisis div</p>
+    <span>span -1 inside div
+        <span>Span -2 inside span 1</span>
+    </span>
+</div>
+<span>span -3 outside div</span>
+
+<h3>general sibling combinator </h3>
+<img src="C:\Users\Admin\Desktop\tree.jpg" width="300" height="200">
+<p>This is p tag after img</p>
+<span>This is span tag</span>
+<div>
+    <p>This is p tag inside div</p>
+    <img src="C:\Users\Admin\Desktop\tree.jpg" width="300" height="200">
+    <span>Another span after img</span>
+    <p>This is another p tag not immediate after img</p>
+</div>
+
+<h3>adjacent sibling combinator </h3>
+<ul>
+    <li>One</li>
+    <li>Two!</li>
+    <li>Three</li>
+  </ul>
+  <h3>Column combinator </h3>
+
+  <table border="1">
+    <colgroup>
+      <col span="2"/>
+      <col class="selected"/>
+    </colgroup>
+    <tbody>
+      <tr>
+        <td>A
+        <td>B
+        <td>C
+      </tr>
+      <tr>
+        <td colspan="2">D</td>
+        <td>E</td>
+      </tr>
+      <tr>
+        <td>F</td>
+        <td colspan="2">G</td>
+      </tr>
+    </tbody>
+  </table>
+  
+</body>
+</html>

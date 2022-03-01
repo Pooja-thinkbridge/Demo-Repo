@@ -1,0 +1,89 @@
+[33mcommit 0f04800b63c352f9924f07cde2574a0fdb246644[m[33m ([m[1;36mHEAD -> [m[1;32mcss[m[33m, [m[1;31morigin/css[m[33m)[m
+Author: PoojaR <pooja.r@thinkbridge.in>
+Date:   Tue Mar 1 11:19:40 2022 +0530
+
+    columncombinator
+
+[33mcommit 7e962a12b4c55dff0b5a246db892a68c4f47f6c4[m
+Author: PoojaR <pooja.r@thinkbridge.in>
+Date:   Tue Mar 1 11:09:46 2022 +0530
+
+    adjacentSibling
+
+[33mcommit 4f90a1ef026ba8e23336ed1588f735d5275a0c0d[m
+Author: PoojaR <pooja.r@thinkbridge.in>
+Date:   Tue Mar 1 11:02:11 2022 +0530
+
+    generalSiblingCombinator
+
+[33mcommit 4b11fd06da0e1158cc320d4c603212909b7f1a9e[m
+Author: PoojaR <pooja.r@thinkbridge.in>
+Date:   Tue Mar 1 11:01:16 2022 +0530
+
+    general sibling
+
+[33mcommit 8bbf0eefffdd0018893622dc32ff5f82f71dc35a[m
+Author: PoojaR <pooja.r@thinkbridge.in>
+Date:   Tue Mar 1 11:01:00 2022 +0530
+
+    generalSibling
+
+[33mcommit 219b5b620cd83e427c985541e559824713ad0208[m
+Author: PoojaR <pooja.r@thinkbridge.in>
+Date:   Tue Mar 1 10:43:41 2022 +0530
+
+    childcombinator
+
+[33mcommit 9a21a1837cf16f29333e3b300c0abc1c8106e249[m
+Author: PoojaR <pooja.r@thinkbridge.in>
+Date:   Mon Feb 28 17:33:16 2022 +0530
+
+    descendantcombinator
+
+[33mcommit 76ddc3eb027ceb7bd7f7fe9ac8a5ac84c80f4d86[m
+Author: PoojaR <pooja.r@thinkbridge.in>
+Date:   Mon Feb 28 16:21:25 2022 +0530
+
+    atrributeselector
+
+[33mcommit 6947303984869cebd8fee864a131a23cb78dd936[m
+Author: PoojaR <pooja.r@thinkbridge.in>
+Date:   Mon Feb 28 12:29:49 2022 +0530
+
+    idselector
+
+[33mcommit d6a97c502d49d0e64721bea166587f3c6945d1b3[m
+Author: PoojaR <pooja.r@thinkbridge.in>
+Date:   Mon Feb 28 12:23:08 2022 +0530
+
+    classselector
+
+[33mcommit 830252441962cc2e5e520abdadb21e9ffc77f0a9[m
+Author: PoojaR <pooja.r@thinkbridge.in>
+Date:   Mon Feb 28 12:15:51 2022 +0530
+
+    typeselector
+
+[33mcommit 2257cd61420ef9dae995a0aaac3033b16fe8deea[m
+Author: PoojaR <pooja.r@thinkbridge.in>
+Date:   Mon Feb 28 12:08:56 2022 +0530
+
+    universal
+
+[33mcommit 5783831fceeb6f1f33bd01891fab2a06f71a291f[m
+Author: PoojaR <pooja.r@thinkbridge.in>
+Date:   Mon Feb 28 12:01:26 2022 +0530
+
+    basiccss
+
+[33mcommit 47f02e88dd731557b69125289482facfb5ffa571[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m
+Author: Pooja-thinkbridge <99236407+Pooja-thinkbridge@users.noreply.github.com>
+Date:   Thu Feb 10 14:33:03 2022 +0530
+
+    Update README.md
+
+[33mcommit 3f2c654cfc77bcffc22dab6217fee4bd3381b024[m
+Author: poojaraut1410 <99236407+poojaraut1410@users.noreply.github.com>
+Date:   Wed Feb 9 15:40:01 2022 +0530
+
+    Initial commit
