@@ -12,7 +12,7 @@ h1,h2{
 {
     border: 3px seagreen solid;
     background-color: aquamarine;
-    
+    margin:15px;
 }
 span{
     color: darkorange;
