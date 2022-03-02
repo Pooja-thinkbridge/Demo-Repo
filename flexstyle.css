@@ -1,0 +1,34 @@
+h1,h2{
+    text-align: center;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+    background-color: antiquewhite;
+    border: 3px solid blueviolet;
+    
+  }
+.item
+{
+    border: 3px seagreen solid;
+    background-color: aquamarine;
+}
+.rowrev {
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: antiquewhite;
+    border: 3px solid blueviolet;
+  }
+
+  .col {
+    display: flex;
+    flex-direction:column;
+    background-color: antiquewhite;
+    border: 3px solid blueviolet;
+  }
+  .colrev {
+    display: flex;
+    flex-direction:column-reverse;
+    background-color: antiquewhite;
+    border: 3px solid blueviolet;
+  }
