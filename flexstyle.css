@@ -128,17 +128,14 @@ span{
     column-gap: 20px;
    align-items:flex-end;
     background-color: antiquewhite;
-    border: 3px solid blueviolet;
-    
+    border: 3px solid blueviolet; 
   }
 
   .a{
-    
     display: flex;
    height: 90%;
     row-gap: 50px;
    align-items:flex-end;
     background-color: antiquewhite;
-    border: 3px solid blueviolet;
-    
+    border: 3px solid blueviolet; 
   }
