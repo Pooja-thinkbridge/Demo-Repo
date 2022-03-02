@@ -12,6 +12,11 @@ h1,h2{
 {
     border: 3px seagreen solid;
     background-color: aquamarine;
+    
+}
+span{
+    color: darkorange;
+    font-weight: bold;
 }
 .rowrev {
     display: flex;
@@ -29,6 +34,18 @@ h1,h2{
   .colrev {
     display: flex;
     flex-direction:column-reverse;
+    background-color: antiquewhite;
+    border: 3px solid blueviolet;
+  }
+
+  .flex {
+    display: flex;
+    background-color: antiquewhite;
+    border: 3px solid blueviolet;
+  }
+
+  .flex1 {
+    display:inline;
     background-color: antiquewhite;
     border: 3px solid blueviolet;
   }
