@@ -125,17 +125,18 @@ span{
   .a{
     width: 80%;
     display: flex;
-    column-gap: 20px;
-   align-items:flex-end;
+    row-gap: 50px;
+   
+  flex-direction:column;
     background-color: antiquewhite;
     border: 3px solid blueviolet; 
   }
 
-  .a{
+  .b{
     display: flex;
    height: 90%;
-    row-gap: 50px;
-   align-items:flex-end;
+   column-gap: 50px;
+  flex-direction: row;
     background-color: antiquewhite;
     border: 3px solid blueviolet; 
   }
