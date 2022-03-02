@@ -49,3 +49,27 @@ span{
     background-color: antiquewhite;
     border: 3px solid blueviolet;
   }
+
+  .wrap {
+    display: flex;
+    width: 20%;
+   flex-wrap: wrap;
+    background-color: antiquewhite;
+    border: 3px solid blueviolet;
+  }
+
+  .nowrap {
+    display: flex;
+    width: 20%;
+   flex-wrap:nowrap;
+    background-color: antiquewhite;
+    border: 3px solid blueviolet;
+  }
+
+  .wraprev {
+    display: flex;
+    width: 20%;
+   flex-wrap:wrap-reverse;
+    background-color: antiquewhite;
+    border: 3px solid blueviolet;
+  }
