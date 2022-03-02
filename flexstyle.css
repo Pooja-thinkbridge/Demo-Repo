@@ -45,7 +45,7 @@ span{
   }
 
   .flex1 {
-    display:inline;
+    display:inline-flex;
     background-color: antiquewhite;
     border: 3px solid blueviolet;
   }
