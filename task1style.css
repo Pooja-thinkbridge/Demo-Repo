@@ -1,0 +1,85 @@
+.blox
+{
+    display: flex;
+    flex-direction: column;
+    background-color: antiquewhite;
+    border: 5px solid blueviolet;
+ 
+}
+.item
+{
+    border: 10px seagreen solid;
+    background-color: aquamarine;
+    
+
+}
+h1,h2,h3{
+    text-align: center;
+}
+.subsection
+{
+    display: flex;
+    flex-direction: row;
+    background-color: antiquewhite;
+    border: 5px solid blueviolet;
+}
+
+.item1
+{
+    border: 3px seagreen solid;
+    background-color: aquamarine;
+    
+    margin:15px;
+}
+.setion1
+{
+    flex-grow: 2;
+    
+} 
+.section2
+{
+    flex-grow: 10;
+    align-items: stretch;
+    display: flex;
+    flex-direction: row;
+    background-color:  aquamarine;
+    
+}
+
+
+figcaption {
+    background-color: #222;
+    color: #fff;
+    font: italic smaller sans-serif;
+    padding: 3px;
+    text-align: center;
+}
+.card1
+{
+    flex-grow: 1;
+}
+.card2
+{
+    flex-grow: 1;
+}
+.card3
+{
+    flex-grow: 1;
+}
+.card4
+{
+    flex-grow: 1;
+}
+li{
+    text-align: left;
+    font-size: larger;
+    color:violet;
+}
+.item2
+{
+    border: 5px saddlebrown;
+    background-color:lemonchiffon;
+    width: 20%; 
+    text-align: center;
+    margin:70px 10px;
+}
