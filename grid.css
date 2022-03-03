@@ -24,6 +24,7 @@ h1,h2{
 .box2
 {
     display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 2fr 2fr 1fr;
     gap:30px;
 }
