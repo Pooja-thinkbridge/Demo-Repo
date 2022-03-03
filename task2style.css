@@ -1,0 +1,49 @@
+.blox
+{
+    display: flex;
+
+    flex-direction: column;
+    background-color: antiquewhite;
+    border: 5px solid blueviolet;
+    align-items: stretch;
+}
+.item
+{
+    border: 10px blueviolet solid;
+    background-color:bisque;
+    flex: 2 2;   
+}
+h1,h2,h3{
+    text-align: center;
+}
+header
+{
+    position: sticky;
+}
+
+.item1
+{
+    border: 3px seagreen solid;
+    background-color: aquamarine;
+    
+    margin:15px;
+}
+.setion1
+{
+    flex-grow: 2;
+    
+} 
+.section2
+{
+   
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    background-color:  aquamarine;
+    
+}
+.card1
+{
+    flex-grow: 1;
+    flex-shrink: 2;
+}
