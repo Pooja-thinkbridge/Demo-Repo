@@ -1,0 +1,15 @@
+.box
+{
+    display:grid;
+    grid-template-columns: 200px 200px 200px;
+}
+
+.item
+{
+    border: 3px blueviolet solid;
+    background-color:bisque;
+}
+
+h1,h2{
+    text-align: center;
+}
