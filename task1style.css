@@ -1,10 +1,11 @@
 .blox
 {
     display: flex;
+
     flex-direction: column;
     background-color: antiquewhite;
     border: 5px solid blueviolet;
- 
+    align-items: stretch;
 }
 .item
 {
@@ -38,8 +39,8 @@ h1,h2,h3{
 } 
 .section2
 {
-    flex-grow: 10;
-    align-items: stretch;
+   
+    flex-grow: 1;
     display: flex;
     flex-direction: row;
     background-color:  aquamarine;
@@ -57,18 +58,22 @@ figcaption {
 .card1
 {
     flex-grow: 1;
+    flex-shrink: 2;
 }
 .card2
 {
     flex-grow: 1;
+    flex-shrink: 2;
 }
 .card3
 {
     flex-grow: 1;
+    flex-shrink: 2;
 }
 .card4
 {
     flex-grow: 1;
+    flex-shrink: 2;
 }
 li{
     text-align: left;
