@@ -50,6 +50,7 @@ p{
 .hdr {
     grid-column: 1 / 4;
     grid-row: 1;
+    position: sticky;
   }
   .art{
     grid-column: 2/4;

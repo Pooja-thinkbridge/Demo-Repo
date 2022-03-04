@@ -1,0 +1,103 @@
+ .box {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "content content"
+        "card6 card7"
+        "footer footer";
+    grid-template-columns: 2fr 2fr ;
+    row-gap: 20px;
+    column-gap: 20px;
+  }
+.container
+{
+    grid-area: content;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    
+    gap: 20px;
+   
+    
+}
+header {
+  grid-area: header;
+}
+
+  .card6{
+    grid-area: card6; 
+  }
+  .card7{
+    grid-area: card7; 
+  }
+ 
+  
+  footer {
+    grid-area: footer;
+  }
+
+  .item1
+{
+    border: 3px rgb(27, 21, 25) solid;
+    background-color: rgb(213, 232, 236);
+}
+.card{
+    border: 3px rgb(109, 28, 82) solid;
+    background-color: bisque; 
+}
+p{
+    line-height: 1.5;
+    line-break:strict;
+    padding: 50px;
+    font-size: larger;
+    color: brown;
+    text-align: center;
+}
+li{
+  
+    
+    color:darkblue;
+    font-size: larger;
+}
+
+.item
+{
+    border: 5px rgb(13, 13, 14) solid;
+    background-color:rgb(229, 191, 236);
+}
+
+h1,h3{
+    text-align: center;
+}
+
+.card1
+{
+    grid-column: 1;
+    grid-row: 1;
+}
+.card2
+{
+    grid-column: 2;
+    grid-row: 1;
+}
+.card3
+{
+    grid-column: 3;
+    grid-row: 1;
+}
+.card4
+{
+    grid-column: 4;
+    grid-row: 1;
+}
+
+img{
+    border: 6px rgb(95, 95, 119) solid;
+}
+
+.card5
+{
+    grid-column: 1 /5;
+    grid-row: 2;
+}
+
