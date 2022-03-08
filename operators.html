@@ -2,7 +2,9 @@
 <html>
     <body>
         <canvas id="myCanvas" width="200" height="100" style="border:1px solid #1f1b1b;">
-            Your browser does not support the HTML canvas tag.</canvas>
+            Your browser does not support the HTML canvas tag.</canvas><br>
+            <button onclick="greet()">Click me</button>
+            <button onclick="concat()">Concat using +</button>
             
             <script>
             var c = document.getElementById("myCanvas");
@@ -16,6 +18,20 @@
             y += 25;
             ctx.fillStyle = 'pink';
             ctx.fillRect(20, 20, x, y);
+
+            function greet() {
+            const name = prompt('What is your name?');
+            alert(`Hello ${name}, nice to see you!`);
+            }
+            function concat()
+            {
+                const name=prompt("Ur name");
+                alert("Hello"+" "+name);
+            }
+        
+
+            const bigmouth = 'I\'ve got no right to take my place...';
+            alert(bigmouth);
             </script>
     </body>
 </html>
