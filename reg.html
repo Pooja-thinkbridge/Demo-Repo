@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Home</title>
+    <link rel="stylesheet" href="regstyle.css">
+    <link rel="stylesheet" href="indexstyle.css">
+</head>
+<body>
+
+    <nav class="navbar background">
+        <ul class="nav-list">
+            <div class="logo">
+                <img src="https://www.atsi.in/images//inner/emp-payroll.png" style="height: 80px;">
+            </div>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="reg.html">Register</a></li>
+            <li><a href="card.html">List</a></li>
+        </ul>
+ 
+        <div class="rightNav">
+            <input type="text" name="search" id="search">
+            <button class="btn">Search</button>
+        </div>
+    </nav>
+
+    <div id="bg">
+       <center> </center>
+      <br>
+      
+       
+        <b><u> <h1 >REGISTRATION FORM</h1></u> </b> 
+        <div id="form">
+            <form method="get" >
+                <table id="table">
+                    <tr>
+                        <td>FIRST NAME:</td>
+                        <td>
+                            <input type="text" name="username" size="30"
+                            maxlength="30" placeholder="Enter first name" required pattern="[A-Za-z]">
+                            (max 30 characters A-Z and a-z)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>LAST NAME:
+                            </td>
+                        <td><input type="text" name="username" size="30"
+                            maxlength="30" placeholder="Enter last name" required pattern="[A-Za-z]"/> 
+                             (max 30 characters A-Z and a-z)
+                            </td>
+                    </tr>
+                    <tr><td>
+
+                        DATE OF BIRTH:
+                    </td>
+                          <td>
+                            <input type="number" name="day" size="2"
+                            maxlength="2" placeholder="Day" min="1" max="31" required/> 
+<select name="month">
+    <option value="month">Month</option>
+<option value="Jan">Jan</option>
+<option value="Feb">Feb</option>
+<option value="Mar">Mar</option>
+<option value="Apr">Apr</option>
+<option value="May">May</option>
+<option value="June">June</option>
+<option value="July">July</option>
+<option value="Aug">Aug</option>
+<option value="Sep">Sep</option>
+<option value="Oct">Oct</option>
+<option value="Nov">Nov</option>
+<option value="Dec">Dec</option>
+
+</select>
+<input type="text" name="year" size="5"
+                            maxlength="4" placeholder="Year"  min="1991" max="2005" required/> 
+                           
+                          </td>  
+                    </tr>
+                    <tr>
+                        <td>EMAIL ID:
+                            </td>
+                        <td><input id="email" type="email" name="email" size="30" maxlength="100" pattern=".+@gmail\.com" required/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            MOBILE NO:
+                            
+                        </td>
+                        <td><input type="tel" name="number" size="30" maxlength="10" placeholder="Enter Mobile no" pattern="[7-9]{1}[0-9]{9}"
+                            minlength="10" required/>
+                            
+                            (10 digits number)
+                        </td>
+                            
+                    </tr>
+                    <tr>
+                        <td>GENDER:</td>
+                        <td><input id="female" type="radio" name="gender"
+                            value="f">
+                            <label for="female">Female</label>
+                            <input id="male" type="radio" name="gender"
+                            value="m">
+                            <label for="male">Male</label>
+                            </td>
+                    </tr>
+                    <tr><td>ADDRESS:</td>
+                    <td><textarea rows="4" cols="40" id="comments"  required>
+                    </textarea>
+                    </td></tr>
+                    <tr>
+                        <td>CITY:</td>
+                        <td>
+                            <input type="text" name="city" size="30"
+                            maxlength="30" placeholder="Enter your city name" pattern="[A-Za-z]" required/></td>
+                            
+                           
+                    </tr>
+                    <tr>
+                    
+                    <td>PIN CODE:</td>
+                        <td>
+                            <input type="text" name="pin" size="30"
+                            placeholder="Enter pin code" minlength="6" maxlength="6" pattern="[0-9]{6}"required/>
+                            (6 digits number)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>STATE:</td>
+                        <td>
+                            <input type="text" name="state" size="30"
+                            maxlength="30" placeholder="Enter your state name" pattern="[A-Za-z]" required/></td>
+                            
+                           
+                    </tr>
+                    <tr>
+                        <td>COUNTRY:</td>
+                        <td>
+                            <input type="text" name="COUNTRY" size="30"
+                            maxlength="30" placeholder="Enter your contry name" pattern="[A-Za-z]" required/></td>
+                            
+                           
+                    </tr>
+                    
+                
+                    <tr>
+                        <td>HOBBIES</td>
+                    <td>
+                        <input type="checkbox" name="Singing" value="Singing"  /> Singing
+<input type="checkbox" name="HOBBIES"
+value="dancing" /> Dancing
+<input type="checkbox" name="HOBBIES"
+value="Drawing" /> Drawing
+<input type="checkbox" name="HOBBIES"
+value="Sketching" /> Sketching
+<br/>
+
+</td>
+                        </table>
+                    
+                </td>
+                </tr>
+
+                <tr>
+                    <td>
+                    
+            <label for="avatar">Choose a profile picture:</label>
+        </td>
+        <td>
+            
+            <input type="file" id="profile" name="profile" accept="image/png, image/jpeg"><br><br>
+        </td>
+
+    </tr>
+       
+                </table>
+                <br><br><br>
+                
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </form>
+
+
+        </div>
+ 
+     </div>
+    
+</body>
+</html>
