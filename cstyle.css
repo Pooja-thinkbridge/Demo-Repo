@@ -1,0 +1,93 @@
+html {
+    background-color: #ededed;
+    font: normal 14px / 20px 'Roboto', sans-serif;
+    padding: 0 0 25px;
+  }
+  
+  h1 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+  
+ 
+  
+  .card {
+    background-color: #fff;
+    border-radius: 2px;
+    box-shadow: 2px 2px 4px rgba(0,0,0,.25), 1px 1px 3px rgba(0,0,0,.1);
+    max-width: 300px;
+  }
+  .blox
+{
+    display: grid;
+    grid-template-columns: (4,1fr);
+
+}
+  
+  .card-media {
+    width: 100%;
+  }
+  
+  .card-details {
+    padding: 5px 15px;
+  }
+  
+  .card-head {
+    font-weight: 400;
+  }
+  
+  .card-head {
+    font-size: 26px;
+    margin-bottom: 15px;
+  }
+  
+  .card-action-button {
+    border-radius: 2px;
+    color: #FFAB40;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 500;
+    margin: 0;
+    padding: 10px;
+    text-decoration: none;
+  }
+  
+  .card-action-button:hover {
+    background-color: rgba(12, 11, 11, 0.2);
+  }
+
+  .card1
+{
+
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.card2
+{
+    margin-left: 0;
+    grid-column: 2;
+    grid-row: 1;
+}
+
+
+.card3
+{
+   
+    grid-column: 3;
+    grid-row: 1;
+}
+.card4
+{
+   
+    grid-column: 4;
+    grid-row: 1;
+}
+.card5
+{
+   
+    grid-column: 1;
+    grid-row: 2;
+}
