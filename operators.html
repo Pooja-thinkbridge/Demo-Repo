@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <canvas id="myCanvas" width="200" height="100" style="border:1px solid #1f1b1b;">
+            Your browser does not support the HTML canvas tag.</canvas>
+            
+            <script>
+            var c = document.getElementById("myCanvas");
+            var ctx = c.getContext("2d");
+            let x = 60; let y = 70;
+
+            x = 50+y;
+            y = 50/2+10;
+            x=x++;
+            x=x-10;
+            y += 25;
+            ctx.fillStyle = 'pink';
+            ctx.fillRect(20, 20, x, y);
+            </script>
+    </body>
+</html>
