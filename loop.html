@@ -8,7 +8,8 @@
 <p id="demo"></p>
 <p>while loop:</p>
 <p id="demo1"></p>
-
+<p>Do while loop</p>
+<p id="demo2"></p>
 <script>
     
     const birds= ['parot' , 'owl' , 'crow' , 'sparrow' ,'duck'];
@@ -48,6 +49,15 @@
         x++;
         }
         document.getElementById("demo1").innerHTML = text;
+
+        let text1 = "";
+        let a = 0;
+        do {
+        text1 += "<br>The sqare of " +a+" is " + a*a;
+        a++;
+        }
+        while (a < 10);  
+        document.getElementById("demo2").innerHTML = text1;
 </script>
 
 
