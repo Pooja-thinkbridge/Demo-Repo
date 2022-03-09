@@ -12,6 +12,7 @@
 <button onclick="shift()">shift</button><br><br>
 <button onclick="slice()">splice</button><br><br>
 <button onclick="map()">map</button><br><br>
+<button onclick="split()">split</button><br><br>
 </body>
 
 <script>
@@ -72,6 +73,13 @@
     {
         const newarr = birds.map(item => item.length);
         document.getElementById('demo').innerHTML=newarr;
+    }
+    function split()
+    {
+        const str = "one,two,three,four,five,six";
+        alert("String is "+str);
+        const arr = str.split(',');
+        document.getElementById('demo').innerHTML="aaray : "+arr;
     }
 
 </script>
