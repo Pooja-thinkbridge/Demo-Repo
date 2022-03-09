@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>HTML DOM Events</h1>
+<h2>The onclick Event</h2>
+<input type="text" id="s1" size="20">
+
+<p>How to assign an "onclick" event to a p element:</p>
+
+<p id="demo" onclick="myFunction()">Click me.</p>
+
+<script>
+function myFunction() {
+
+    s1=document.getElementById('s1');
+  document.getElementById("demo").innerHTML = s1.value;
+}
+</script>
+
+</body>
+</html>

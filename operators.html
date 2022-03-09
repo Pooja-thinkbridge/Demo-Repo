@@ -4,7 +4,20 @@
         <canvas id="myCanvas" width="200" height="100" style="border:1px solid #1f1b1b;">
             Your browser does not support the HTML canvas tag.</canvas><br>
             <button onclick="greet()">Click me</button>
-            <button onclick="concat()">Concat using +</button>
+            <button onclick="concat()">Concat using + operator</button>
+            <p>The AND operator (&&) returns true if both expressions are true, otherwise it returns false.</p>
+
+            <p id="demo"></p>
+
+            <p>The OR operator (||) returns true if one or both expressions are true, otherwise it returns false.</p>
+
+            <p id="demo1"></p>
+
+            <p>The NOT operator (!) returns true for false statements and false for true statements.</p>
+
+            <p id="demo3"></p>
+
+
             
             <script>
             var c = document.getElementById("myCanvas");
@@ -32,6 +45,21 @@
 
             const bigmouth = 'I\'ve got no right to take my place...';
             alert(bigmouth);
+            let a = 7;
+            let b = 4;
+
+            document.getElementById("demo").innerHTML = 
+            (a < 10 && b > 1) + "<br>" + 
+            (a < 10 && b < 1);
+
+            document.getElementById("demo1").innerHTML = 
+            (x == 5 || y == 5) + "<br>" + 
+            (x == 6 || y == 0); 
+
+            document.getElementById("demo3").innerHTML = 
+                !(x === y) + "<br>" + 
+                !(x > y);
+
             </script>
     </body>
 </html>
