@@ -12,17 +12,31 @@
 <input type="text" id="demo" size="20"><br><br>
 
 
-<button onclick="len()">Lenght</button><br>
+<button onclick="len()">Lenght</button><br><br>
+<button onclick="inc()">include</button><br>
 
 <script>
   var s1=document.getElementById('s1');
   var s2=document.getElementById('s2');
   
+   
 function len() {
-  let a= s1.value;
+  a= s1.value;
   let l=a.length;
   alert("Lenght of string1 is "+l);
-  
+
+}
+function inc()
+{
+  a= s1.value;
+  b= s2.value;
+  if(a.includes(b))
+  {
+    alert('Found! '+ b);
+  }
+  else{
+    alert("not found");
+  }
 }
 </script>
 
