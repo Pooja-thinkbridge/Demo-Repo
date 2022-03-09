@@ -7,16 +7,28 @@
 
 <p id="demo"></p>
 
+
+<p id="demo1"></p>
 <script>
 const hour = new Date().getHours(); 
+
 
 if (hour < 18) {
   alert("Good day");
 } else {
   alert("Good evening");
 }
-
 document.getElementById("demo").innerHTML = "if else example";
+const time = new Date().getHours();
+let greeting;
+if (time < 10) {
+  greeting = "Good morning";
+} else if (time < 20) {
+  greeting = "Good day";
+} else {
+  greeting = "Good evening";
+}
+document.getElementById("demo1").innerHTML = greeting;
 </script>
 
 </body>
