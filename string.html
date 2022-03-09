@@ -13,7 +13,9 @@
 
 
 <button onclick="len()">Lenght</button><br><br>
-<button onclick="inc()">include</button><br>
+<button onclick="inc()">include</button><br><br>
+<button onclick="start()">startwith</button>
+<button onclick="end()">endwith</button><br>
 
 <script>
   var s1=document.getElementById('s1');
@@ -31,6 +33,30 @@ function inc()
   a= s1.value;
   b= s2.value;
   if(a.includes(b))
+  {
+    alert('Found! '+ b);
+  }
+  else{
+    alert("not found");
+  }
+}
+function start()
+{
+  a= s1.value;
+  b= s2.value;
+  if(a.startsWith(b))
+  {
+    alert('Found! '+ b);
+  }
+  else{
+    alert("not found");
+  }
+}
+function end()
+{
+  a= s1.value;
+  b= s2.value;
+  if(a.endsWith(b))
   {
     alert('Found! '+ b);
   }
