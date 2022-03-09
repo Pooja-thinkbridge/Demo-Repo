@@ -22,6 +22,7 @@
 <button onclick="rep()">Replace</button><br><br>
 <button onclick="trim1()">Trim</button><br><br>
 <button onclick="con()">Concat</button><br><br>
+<button onclick="cmp()">Compare</button><br><br>
 
 <script>
   var s1=document.getElementById('s1');
@@ -108,8 +109,15 @@ function con()
 {
   a= s1.value; 
   b= s2.value;
-  r1=a.concat(" ",b)
+  r1=a.concat(" ",b);
   alert(r1);
+ 
+}
+function cmp()
+{
+  a= s1.value; 
+  b= s2.value;
+  alert(a.localeCompare(b));
  
 }
 
