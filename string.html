@@ -1,20 +1,28 @@
 <!DOCTYPE html>
 <html>
 <body>
+<h1>String Methods</h1>
+<label>String 1 </label>
+<input type="text" id="s1" size="20"><br><br>
 
-<h1>HTML DOM Events</h1>
-<h2>The onclick Event</h2>
-<input type="text" id="s1" size="20">
+<label>String 2 </label>
+<input type="text" id="s2" size="20"><br><br>
 
-<p>How to assign an "onclick" event to a p element:</p>
+<label>Result</label>
+<input type="text" id="demo" size="20"><br><br>
 
-<p id="demo" onclick="myFunction()">Click me.</p>
+
+<button onclick="len()">Lenght</button><br>
 
 <script>
-function myFunction() {
-
-    s1=document.getElementById('s1');
-  document.getElementById("demo").innerHTML = s1.value;
+  var s1=document.getElementById('s1');
+  var s2=document.getElementById('s2');
+  
+function len() {
+  let a= s1.value;
+  let l=a.length;
+  alert("Lenght of string1 is "+l);
+  
 }
 </script>
 
