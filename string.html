@@ -21,6 +21,7 @@
 <button onclick="upper()">Uppercase</button><br><br>
 <button onclick="rep()">Replace</button><br><br>
 <button onclick="trim1()">Trim</button><br><br>
+<button onclick="con()">Concat</button><br><br>
 
 <script>
   var s1=document.getElementById('s1');
@@ -101,6 +102,14 @@ function trim1()
 {
   a= s1.value; 
   alert(a.trim());
+ 
+}
+function con()
+{
+  a= s1.value; 
+  b= s2.value;
+  r1=a.concat(" ",b)
+  alert(r1);
  
 }
 
