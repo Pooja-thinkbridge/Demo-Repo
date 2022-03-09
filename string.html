@@ -20,6 +20,7 @@
 <button onclick="lower()">Lowercase</button><br><br>
 <button onclick="upper()">Uppercase</button><br><br>
 <button onclick="rep()">Replace</button><br><br>
+<button onclick="trim1()">Trim</button><br><br>
 
 <script>
   var s1=document.getElementById('s1');
@@ -93,6 +94,13 @@ function rep()
   r1=a.slice(0,3);
   r2=b.slice(0,3);
   alert(a.replace(r1,r2));
+ 
+}
+
+function trim1()
+{
+  a= s1.value; 
+  alert(a.trim());
  
 }
 
