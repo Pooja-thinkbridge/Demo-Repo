@@ -16,6 +16,7 @@
 <button onclick="inc()">include</button><br><br>
 <button onclick="start()">startwith</button>
 <button onclick="end()">endwith</button><br>
+<button onclick="slice()">Slice</button><br>
 
 <script>
   var s1=document.getElementById('s1');
@@ -63,6 +64,12 @@ function end()
   else{
     alert("not found");
   }
+}
+function slice()
+{
+  a= s1.value;
+  alert(a.slice(1,3));
+ 
 }
 </script>
 
