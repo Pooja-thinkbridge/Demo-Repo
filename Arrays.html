@@ -8,6 +8,9 @@
 <button onclick="index()">indexOf</button><br><br>
 <button onclick="push()">push</button><br><br>
 <button onclick="unshift()">unshift</button><br><br>
+<button onclick="pop()">pop</button><br><br>
+<button onclick="shift()">shift</button><br><br>
+<button onclick="slice()">splice</button><br><br>
 </body>
 
 <script>
@@ -45,5 +48,24 @@
         len=birds.unshift(item);
         document.getElementById('demo').innerHTML=birds;
     }
+    function shift()
+    {
+        alert("removes 1st item from array");
+        len=birds.shift();
+        document.getElementById('demo').innerHTML=birds;
+    }
+    function pop()
+    {
+        alert("removes last item from array");
+        len=birds.pop();
+        document.getElementById('demo').innerHTML=birds;
+    }
+    function slice()
+    {
+        let item = prompt("Enter index of Item u want to remove");
+        birds.splice(item,1);
+        document.getElementById('demo').innerHTML=birds;
+    }
+
 </script>
 </html>
