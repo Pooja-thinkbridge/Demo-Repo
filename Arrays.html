@@ -6,7 +6,8 @@
 <button onclick="len()">Lenght</button><br><br>
 <button onclick="mod()">Modify</button><br><br>
 <button onclick="index()">indexOf</button><br><br>
-
+<button onclick="push()">push</button><br><br>
+<button onclick="unshift()">unshift</button><br><br>
 </body>
 
 <script>
@@ -30,6 +31,19 @@
         index=birds.indexOf(item);
         document.getElementById('demo').innerHTML=index;
     }
-
+    function push()
+    {
+        let item = prompt("Enter Item name u want to add in array at last");
+     
+        len=birds.push(item);
+        document.getElementById('demo').innerHTML=birds;
+    }
+    function unshift()
+    {
+        let item = prompt("Enter Item name u want to add in array at begining");
+     
+        len=birds.unshift(item);
+        document.getElementById('demo').innerHTML=birds;
+    }
 </script>
 </html>
