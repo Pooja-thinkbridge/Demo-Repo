@@ -6,9 +6,9 @@
 
 
 <p id="demo"></p>
-
-
 <p id="demo1"></p>
+
+<p id="demo2"></p>
 <script>
 const hour = new Date().getHours(); 
 
@@ -29,6 +29,32 @@ if (time < 10) {
   greeting = "Good evening";
 }
 document.getElementById("demo1").innerHTML = greeting;
+
+
+let day;
+switch (new Date().getDay()) {
+  case 0:
+    day = "Sunday";
+    break;
+  case 1:
+    day = "Monday";
+    break;
+  case 2:
+    day = "Tuesday";
+    break;
+  case 3:
+    day = "Wednesday";
+    break;
+  case 4:
+    day = "Thursday";
+    break;
+  case 5:
+    day = "Friday";
+    break;
+  case  6:
+    day = "Saturday";
+}
+document.getElementById("demo2").innerHTML = "Today is " + day;
 </script>
 
 </body>
