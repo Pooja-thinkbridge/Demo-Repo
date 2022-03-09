@@ -5,6 +5,7 @@
 <p id="demo"></p>
 <button onclick="len()">Lenght</button><br><br>
 <button onclick="mod()">Modify</button><br><br>
+<button onclick="index()">indexOf</button><br><br>
 
 </body>
 
@@ -22,5 +23,13 @@
         birds[index]=item;
         document.getElementById('demo').innerHTML=birds;
     }
+    function index()
+    {
+        let item = prompt("Enter Item name u want to find index");
+     
+        index=birds.indexOf(item);
+        document.getElementById('demo').innerHTML=index;
+    }
+
 </script>
 </html>
