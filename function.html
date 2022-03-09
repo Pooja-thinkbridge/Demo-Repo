@@ -2,11 +2,23 @@
 <html>
     <body>
         <input type="text" size="30" id="Box">
+        <p>String length:of  'pooja' , 'shruti' , 'rihan' , 'reshma']</p>
+        <p id="demo"></p>
+        <p>Cubes</p>
+        <p id="demo1"></p>
     </body>
     <script>
        const t=document.getElementById('Box');
         t.addEventListener('keydown', function(event) {
         document.write(`You pressed "${event.key}".`);
-});
+        });
+
+        const arr=['pooja' , 'shruti' , 'rihan' , 'reshma'];
+        const newarr = arr.map(item => item.length);
+        document.getElementById('demo').innerHTML=newarr;
+
+        const no = [1,2,3,4,5,6];
+         const cube = no.map(a=>a*a*a);
+         document.getElementById('demo1').innerHTML=cube;
     </script>
 </html>
