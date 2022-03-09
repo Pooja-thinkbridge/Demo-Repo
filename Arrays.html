@@ -13,6 +13,7 @@
 <button onclick="slice()">splice</button><br><br>
 <button onclick="map()">map</button><br><br>
 <button onclick="split()">split</button><br><br>
+<button onclick="join()">join</button><br><br>
 </body>
 
 <script>
@@ -81,6 +82,11 @@
         const arr = str.split(',');
         document.getElementById('demo').innerHTML="aaray : "+arr;
     }
-
+    function join()
+    {
+        const str = birds.join('-');
+        document.getElementById('demo').innerHTML="String is : "+str;
+    }
+ 
 </script>
 </html>
