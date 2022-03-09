@@ -11,6 +11,7 @@
 <button onclick="pop()">pop</button><br><br>
 <button onclick="shift()">shift</button><br><br>
 <button onclick="slice()">splice</button><br><br>
+<button onclick="map()">map</button><br><br>
 </body>
 
 <script>
@@ -22,6 +23,7 @@
     }
     function mod()
     {
+        alert("calculate length of each item in an array");
         let index = prompt("Enter Index u want to madify");
         let item = prompt("Enter madified item");
         birds[index]=item;
@@ -65,6 +67,11 @@
         let item = prompt("Enter index of Item u want to remove");
         birds.splice(item,1);
         document.getElementById('demo').innerHTML=birds;
+    }
+    function map()
+    {
+        const newarr = birds.map(item => item.length);
+        document.getElementById('demo').innerHTML=newarr;
     }
 
 </script>
