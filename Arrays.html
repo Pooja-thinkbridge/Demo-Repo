@@ -3,11 +3,24 @@
 <body>
 <h1>Arrays</h1>
 <p id="demo"></p>
+<button onclick="len()">Lenght</button><br><br>
+<button onclick="mod()">Modify</button><br><br>
 
 </body>
 
 <script>
     const birds= ['parot' , 'owl' , 'crow' , 'sparrow' ,'duck'];
     document.getElementById('demo').innerHTML=birds;
+    function len()
+    {
+        alert(birds.length);
+    }
+    function mod()
+    {
+        let index = prompt("Enter Index u want to madify");
+        let item = prompt("Enter madified item");
+        birds[index]=item;
+        document.getElementById('demo').innerHTML=birds;
+    }
 </script>
 </html>
