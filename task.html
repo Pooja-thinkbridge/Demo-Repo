@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Difference between date :  </p>
+<p id="d1"> </p>
+<p id="d2"> </p>
+<p id="demo"></p>
+
+<script>
+
+const d1= new Date();
+const d2 = new Date(2022, 03, 4, 10, 33, 30, 0);
+document.getElementById('d1').innerHTML=d1;
+document.getElementById('d2').innerHTML=d2;
+
+const t1=d1.getTime();
+
+const t2=d2.getTime();
+var diff;
+if(t1 > t2)
+{
+    diff= t1-t2;
+}
+else
+{
+    diff= t2-t1;
+}
+var result=Math.round(diff/60000);
+document.getElementById('demo').innerHTML=result;
+
+</script>
+  
+</body>
+</html>
