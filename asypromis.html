@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+           
+     function success () {
+  console.log(this.responseText);
+}
+var ex = new XMLHttpRequest();
+ex.addEventListener("load", success);
+ex.open("GET", "https://mdn.github.io/learning-area/javascript/apis/fetching-data/can-store/products.json");
+ex.send();
+    
+        </script>
+    </body>
+</html>
