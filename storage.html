@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            localStorage.setItem("name","Pooja");
+            localStorage.setItem("ID","101");
+            localStorage.setItem("lastname","Raut");
+            var data=localStorage.getItem("name");
+            document.write(data);
+            localStorage.removeItem("ID");
+            document.write(" "+localStorage.key(1));
+            localStorage.clear();
+            var data=localStorage.getItem("name");
+            document.write(data);
+
+            sessionStorage.setItem("1","A");
+            sessionStorage.setItem("2","B");
+            var data1=sessionStorage.getItem("1");
+            document.write("\n"+data1);
+            
+            
+        </script>
+    </body>
+</html>
