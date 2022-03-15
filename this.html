@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            
+    "use strict";
+        const person = {
+  firstName: "Shreya",
+  lastName : "Mishra",
+  id       : 5566,
+  fullName : function() {
+    return this.firstName + " " + this.lastName;
+  }
+};
+
+console.log(person.fullName());
+
+let x = this;
+console.log(x);
+function demo()
+{
+   console.log(this);
+}
+demo();
+
+        </script>
+    </body>
+</html>
