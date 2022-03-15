@@ -5,7 +5,9 @@
         <p>String length:of  'pooja' , 'shruti' , 'rihan' , 'reshma']</p>
         <p id="demo"></p>
         <p>Cubes</p>
-        <p id="demo1"></p>
+        <p id="demo1"></p><br>
+        <button onclick="func()">callback</button>
+
     </body>
     <script>
        const t=document.getElementById('Box');
@@ -20,5 +22,16 @@
         const no = [1,2,3,4,5,6];
          const cube = no.map(a=>a*a*a);
          document.getElementById('demo1').innerHTML=cube;
+
+         function greeting(name)
+         {
+             alert('hello '+name+' Hv a Good day')
+         }
+         function func(callback)
+         {
+            var name=prompt("Ur name please!!!");
+            callback(name);
+         }
+         func(greeting);
     </script>
 </html>
