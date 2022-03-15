@@ -29,6 +29,50 @@ this.salary=salary;
 e=new emp(103,"Meenal",30000);  
   
 document.write(e.id+" "+e.name+" "+e.salary);  
+
+
+const object1 = {  
+  a: 1,  
+  b: 2,  
+  c: 3  
+};  
+const object3= {  
+  g: 1,  
+  h: 2,  
+  i: 3  
+};    
+  
+const object2 = Object.assign({c: 4, d: 5}, object1);  
+const object4 = Object.assign({g: 34, h: 25}, object3);  
+const obj = Object.assign(object4)
+console.log(object2);  
+console.log(object4.g, object4.h); 
+console.log(obj);
+
+
+
+const people = {  
+  printIntroduction: function ()  
+   {  
+    console.log(`My name is ${this.name}. Am I human? ${this.isHuman}`);  
+  }  
+};  
+const me = Object.create(people);  
+me.name = "Sara";
+me.isHuman = true;  
+me.printIntroduction();  
+
+const obj2 = { 10: 'arry', 21: 'barry', 23: 'carry' };  
+console.log(Object.entries(obj2)[0]);  
+
+const ob1 = { property1: 'freeze'};  
+const ob2 = Object.freeze(ob1);  
+ob2.property1 = 'new_data';  
+  console.log(ob2.property1);  
+
+  console.log(Object.keys(me));
+  console.log(Object.values(me));
+
         </script>
     </body>
 </html>
