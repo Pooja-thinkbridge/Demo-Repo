@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <body>
+
+        <script>
+            const stud = {
+            name: 'Pooja',
+             introduce() {
+             console.log(`Hi! I'm ${this.name}.`);
+                }
+        }
+stud.introduce();
+function createStud(name) {
+  const obj = {};
+  obj.name = name;
+  obj.introduce = function() {
+    console.log(`Hi! I'm ${this.name}.`);
+  }
+  return obj;
+}
+stud1=createStud("Neha");
+stud1.introduce();
+
+function emp(id,name,salary){  
+this.id=id;  
+this.name=name;  
+this.salary=salary;  
+}  
+e=new emp(103,"Meenal",30000);  
+  
+document.write(e.id+" "+e.name+" "+e.salary);  
+        </script>
+    </body>
+</html>
