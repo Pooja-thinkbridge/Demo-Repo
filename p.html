@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+const p1 = fetch('https://api.github.com/users/iliakan') 
+
+const p2 = fetch('https://api.github.com/users/remy') 
+
+const p3= fetch("https://api.github.com/users/jeresig")
+//const p3 =fetch('https://no-such-server.blabla') // rejects
+ 
+
+  Promise.all([p1,p2,p3])
+  .then(users => users.forEach(user => alert("Successful loaded "+user.url+"status: "+user.status)))
+  .catch(err => alert("Promise.all fails "+err))
+  
+
+        </script>
+    </body>
+</html>
