@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            
+               const promise1= fetch('https://api.github.com/users/iliakan');
+               const promise2= fetch('https://api.github.com/uses/remy');
+               const promise3= fetch('https://api.github.com/users/jeresig');
+
+
+      fetch('https://mdn.github.io/learning-area/javascript/apis/fetching-data/can-store/products.json')
+  .then( response => {
+    if (!response.ok) {
+      throw new Error(`HTTP error: ${response.status}`);
+    }
+    return response.json();
+  })
+  .then( json => initialize(json) )
+   .catch(error => {
+              console.error(error)
+               });
+
+              //  promise1
+              //  .then( response => {
+              //    if(!response.ok)
+              //   {
+              //       throw new Error(`Promise1 error: ${response.status}`);
+              //   }
+              //   // console.log("Promise1 successful "+response.status);
+              //   });
+                
+              //   // .catch(error => {
+              //   //  console.error(error)
+              //   // });
+
+              //  promise2
+              //  .then( response => {
+              //    if(!response.ok)
+              //   {
+              //     throw new Error(`Promise2 error: ${response.status}`);
+              //   }
+              //   // console.log("Promise2 successful "+response.status);
+              //   })
+                
+              //   .catch(error => {
+              //    console.log(error);
+              //    });
+
+              //   promise3
+              //  .then( response => {
+              //    if(!response.ok)
+              //   {
+              //       throw new Error(`Promise3 error: ${response.status}`);
+              //   }
+              //   // console.log("Promise3 successful "+response.status);
+              //   })
+                
+              //   .catch(error => {
+              // console.error(error)
+              //  });
+
+                Promise.all([promise1,promise2])
+              .then((values) => {
+               console.log(values);
+                })
+              .catch((error) => {
+    console.log(error);
+  });
+      
+
+            
+        </script>
+    </body>
+</html>
+            
