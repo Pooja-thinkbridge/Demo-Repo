@@ -7,6 +7,15 @@
 <p id="demo"></p>
 
 <p id="demo1"></p>
+<p>Add a new HTML Element.</p>
+<h2>JavaScript HTML DOM</h2>
+<div id="div1">
+<p id="p1">This is a paragraph.</p>
+<p id="p2">This is another paragraph.</p>
+
+<button onclick="myFunction()">Remove Element</button>
+</div>
+
 
 <script>
 document.getElementById("demo").innerHTML = "Hello !!!";
@@ -14,6 +23,17 @@ document.getElementById("demo").innerHTML = "Hello !!!";
 const element = document.getElementsByTagName("p");
 
 document.getElementById("demo1").innerHTML = 'The text in first paragraph (index 0) is: ' + element[0].innerHTML;
+
+
+const para = document.createElement("p");
+const node = document.createTextNode("This is new.");
+para.appendChild(node);
+const element1 = document.getElementById("div1");
+element1.appendChild(para);
+
+function myFunction() {
+document.getElementById("p1").remove();
+}
 </script>
 
 </body>
