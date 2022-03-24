@@ -16,3 +16,5 @@ let str1: string = 'Hello';
 let str2: string = 'TypeScript';
 console.log(str1.concat(str2));
 console.log(str2.indexOf('c'));
+let x : boolean = true;
+console.log(x);

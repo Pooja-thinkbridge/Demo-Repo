@@ -14,3 +14,5 @@ var str1 = 'Hello';
 var str2 = 'TypeScript';
 console.log(str1.concat(str2));
 console.log(str2.indexOf('c'));
+var x = true;
+console.log(x);
