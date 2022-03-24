@@ -32,3 +32,11 @@ function demo() {
 }
 console.log(num);
 demo();
+
+
+var a = "some text";
+var b = 123;
+a= b;
+
+var arr = [0, 1,3, "str"]; 
+arr.push("str") 
