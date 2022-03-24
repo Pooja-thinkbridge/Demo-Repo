@@ -71,3 +71,12 @@ var PrintMedia;
     PrintMedia[PrintMedia["Book"] = 4] = "Book";
 })(PrintMedia || (PrintMedia = {}));
 console.log(PrintMedia);
+//union
+function displayType(code) {
+    if (typeof (code) === "number")
+        console.log('Code is number. ' + code);
+    else if (typeof (code) === "string")
+        console.log('Code is string. ' + code);
+}
+displayType(333);
+displayType("HIII");

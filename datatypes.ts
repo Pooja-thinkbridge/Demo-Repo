@@ -86,3 +86,16 @@ enum PrintMedia {
     Book
   }
   console.log(PrintMedia)
+
+  //union
+
+  function displayType(code: (string | number))
+{
+    if(typeof(code) === "number")
+        console.log('Code is number. '+code)
+    else if(typeof(code) === "string")
+        console.log('Code is string. '+code)
+}
+ 
+displayType(333);
+displayType("HIII");
