@@ -36,7 +36,12 @@ demo();
 
 var a = "some text";
 var b = 123;
-a= b;
+
 
 var arr = [0, 1,3, "str"]; 
 arr.push("str") 
+
+let code: any = 123; 
+
+let employeeCode = <number> code; 
+console.log(typeof(employeeCode));
