@@ -106,3 +106,10 @@ something = 23;
 something = true;
 
 console.log(something)
+
+function sayHi(): void { 
+    console.log('Hi!')
+} 
+
+let speech: void = sayHi(); 
+console.log(speech);
