@@ -66,3 +66,15 @@ console.log("CopiedArray:" +copyArray);
 
 let mergedArray = [...arr1, ...arry2];
 console.log("MergedArray:" +mergedArray);
+
+
+// // Declare a tuple
+
+ let t: [string, number];
+
+// // Initialize It
+
+t = ["hi", 8];
+t.push("bye" , 10);
+console.log("Tupple : "+ t);
+console.log(t[0]);
