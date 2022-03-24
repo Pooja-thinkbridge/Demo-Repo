@@ -16,3 +16,19 @@ function add(a:number , b:number):number
 
 var sum:number = add(5,10);
 console.log("Addition is : "+sum);
+
+
+var num:number = 1; 
+
+function demo() {
+    let num:number = 2;
+
+    if(true) { 
+        const num:number = 3;
+        console.log(num); 
+    }
+
+    console.log(num);
+}
+console.log(num);
+demo();
