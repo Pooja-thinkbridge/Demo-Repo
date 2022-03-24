@@ -78,3 +78,11 @@ t = ["hi", 8];
 t.push("bye" , 10);
 console.log("Tupple : "+ t);
 console.log(t[0]);
+
+enum PrintMedia {
+    Newspaper = 1,
+    Newsletter,
+    Magazine,
+    Book
+  }
+  console.log(PrintMedia)

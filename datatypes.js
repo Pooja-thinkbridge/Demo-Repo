@@ -56,3 +56,18 @@ console.log("NewArray:" + newArray);
 // // create array by merging two arrays
 var mergedArray = __spreadArray(__spreadArray([], arr1, true), arry2, true);
 console.log("MergedArray:" + mergedArray);
+// // Declare a tuple
+var t;
+// // Initialize It
+t = ["hi", 8];
+t.push("bye", 10);
+console.log("Tupple : " + t);
+console.log(t[0]);
+var PrintMedia;
+(function (PrintMedia) {
+    PrintMedia[PrintMedia["Newspaper"] = 1] = "Newspaper";
+    PrintMedia[PrintMedia["Newsletter"] = 2] = "Newsletter";
+    PrintMedia[PrintMedia["Magazine"] = 3] = "Magazine";
+    PrintMedia[PrintMedia["Book"] = 4] = "Book";
+})(PrintMedia || (PrintMedia = {}));
+console.log(PrintMedia);
