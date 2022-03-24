@@ -10,3 +10,7 @@ console.log(typeof n);
 var num2 = no.valueOf();
 console.log(num2); //Output: 123
 console.log(typeof num2);
+var str1 = 'Hello';
+var str2 = 'TypeScript';
+console.log(str1.concat(str2));
+console.log(str2.indexOf('c'));

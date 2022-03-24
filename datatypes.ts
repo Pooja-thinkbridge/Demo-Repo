@@ -11,3 +11,8 @@ console.log(typeof n)
 let num2 = no.valueOf() 
 console.log(num2) //Output: 123
 console.log(typeof num2)
+
+let str1: string = 'Hello';
+let str2: string = 'TypeScript';
+console.log(str1.concat(str2));
+console.log(str2.indexOf('c'));
