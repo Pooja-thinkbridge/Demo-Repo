@@ -18,3 +18,13 @@ function update(key: number, value:string):void {
 
 const kvp = update;
 kvp(3, 'C');
+
+interface List {
+    [index:string]:string
+}
+
+let strArr : List = {};
+strArr["TS"] = "TypeScript";
+strArr["JS"] = "JavaScript";
+
+console.log(strArr.TS);

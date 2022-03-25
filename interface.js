@@ -8,3 +8,7 @@ function update(key, value) {
 }
 var kvp = update;
 kvp(3, 'C');
+var strArr = {};
+strArr["TS"] = "TypeScript";
+strArr["JS"] = "JavaScript";
+console.log(strArr.TS);
