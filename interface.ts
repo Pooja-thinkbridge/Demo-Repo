@@ -28,3 +28,29 @@ strArr["TS"] = "TypeScript";
 strArr["JS"] = "JavaScript";
 
 console.log(strArr.TS);
+
+interface IEmployee {
+    readonly compId: number;
+  empCode: number;
+    empName: string;
+    empDept?:string;
+}
+let empObj1:IEmployee = {   
+    empCode:1,
+    compId:101,
+    empName:"Pooja"
+}
+
+
+let empObj2:IEmployee = {   
+    empCode:2,
+    compId:102,
+    empName:"reha"
+}
+
+empObj2.empName = "Rushi";
+//empObj2.compId = 101;
+
+
+console.log(empObj1);
+console.log(empObj2);

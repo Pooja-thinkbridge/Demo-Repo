@@ -12,3 +12,17 @@ var strArr = {};
 strArr["TS"] = "TypeScript";
 strArr["JS"] = "JavaScript";
 console.log(strArr.TS);
+var empObj1 = {
+    empCode: 1,
+    compId: 101,
+    empName: "Pooja"
+};
+var empObj2 = {
+    empCode: 2,
+    compId: 102,
+    empName: "reha"
+};
+empObj2.empName = "Rushi";
+//empObj2.compId = 101;
+console.log(empObj1);
+console.log(empObj2);
