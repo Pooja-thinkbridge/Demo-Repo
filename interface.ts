@@ -54,3 +54,21 @@ empObj2.empName = "Rushi";
 
 console.log(empObj1);
 console.log(empObj2);
+
+
+interface IPerson {
+    name: string;
+    gender: string;
+}
+
+interface Employee extends IPerson {
+    empCode: number;
+}
+
+let empObj:Employee = {
+    empCode:1,
+    name:"Bill",
+    gender:"Male"
+}
+
+console.log(empObj);

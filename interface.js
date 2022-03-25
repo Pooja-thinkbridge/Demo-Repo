@@ -26,3 +26,9 @@ empObj2.empName = "Rushi";
 //empObj2.compId = 101;
 console.log(empObj1);
 console.log(empObj2);
+var empObj = {
+    empCode: 1,
+    name: "Bill",
+    gender: "Male"
+};
+console.log(empObj);
