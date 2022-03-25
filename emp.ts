@@ -75,3 +75,27 @@ class EmpArrr{
     }
     
     
+
+    class Disp extends EmpArrr{
+        display(){
+            console.log("***************************************************");
+        this.emparr.forEach(_element => {
+                    console.log();
+                    console.log("Data for employee : "+_element.id);
+                    console.log ("Name : "+ _element.name);
+                    console.log("Designation : "+_element.designation);
+                    console.log("Active Status : "+_element.isActive);
+                    console.log("----------------------Projects----------------------")
+                    _element.project.forEach(pro => {
+                        console.log("Project ID : "+pro.id);
+                        console.log("Project Name : "+pro.name);
+                    });
+            
+                    console.log("***************************************************");
+                });
+        
+        }
+        }
+        
+        
+        
