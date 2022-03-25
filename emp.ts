@@ -97,5 +97,6 @@ class EmpArrr{
         }
         }
         
-        
+        const d = new Disp();
+        d.display();
         
