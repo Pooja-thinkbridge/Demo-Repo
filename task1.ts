@@ -1,15 +1,15 @@
 class base
 {
 
-    public name:string;
+    public name:string="poja";
 
     constructor(name:string)
     {
         this.name=name
     }
    
-   display(){
-      console.log ("Hello This is base class");
+   display(name:string){
+      console.log (this.name);
    }
   show(){
       console.log("Welcome!! "+this.name);
@@ -18,21 +18,22 @@ class base
 }
 
 class child extends base{
+    name:string = "child";
      
-  display() {
-  super.display();
-      console.log("Hello This is derived class");
+  display(name:string) {
+  super.display(this.name);
+      console.log(this.name);
      
   }
   Print = () => super.show();
 }
 
-
+const name1 :string="abc";
 const cobj = new child("abc");
-cobj.display();
+cobj.display(name1);
 cobj.Print();
 
-const bobj = new base("Pooja");
+const bobj = new base(name1);
 bobj.show();
 
 

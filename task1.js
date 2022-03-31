@@ -15,32 +15,34 @@ var __extends = (this && this.__extends) || (function () {
 })();
 var base = /** @class */ (function () {
     function base(name) {
+        this.name = "poja";
         this.name = name;
     }
-    base.prototype.display = function () {
-        console.log("Hello This is base class");
+    base.prototype.display = function (name) {
+        console.log(this.name);
     };
     base.prototype.show = function () {
         console.log("Welcome!! " + this.name);
     };
-    base.count = 0;
     return base;
 }());
 var child = /** @class */ (function (_super) {
     __extends(child, _super);
     function child() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
+        _this.name = "child";
         _this.Print = function () { return _super.prototype.show.call(_this); };
         return _this;
     }
-    child.prototype.display = function () {
-        _super.prototype.display.call(this);
-        console.log("Hello This is derived class");
+    child.prototype.display = function (name) {
+        _super.prototype.display.call(this, this.name);
+        console.log(this.name);
     };
     return child;
 }(base));
+var name1 = "abc";
 var cobj = new child("abc");
-cobj.display();
+cobj.display(name1);
 cobj.Print();
-var bobj = new base("Pooja");
+var bobj = new base(name1);
 bobj.show();
