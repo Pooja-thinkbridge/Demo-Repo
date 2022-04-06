@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Table CRUD operation</title>
+        <link type="text/css" rel="stylesheet" href="crudstyle.css">
+    </head>
+    <body id="b">
+        <table>
+            <tr>
+                <td>
+                    <form autocomplete="off" onsubmit="submitfrm()">
+                        <div>
+                            <label for="empid">EmpId</label>
+                            <input type="text" name="empid" id="empid" required>
+                
+                        </div>
+                        <div>
+                            <label for="name">EmpName</label>
+                            <input type="text" name="name" id="name" required>
+                        </div>
+                        <div>
+                            <label for="designation">Designation</label>
+                            <input type="text" name="desig" id="desig" required>
+                        </div>
+                        <div>
+                            <label for="salary">Salary</label>
+                            <input type="number" name="salary" id="salary" required>
+                        </div>
+
+                        <div class="btn">
+                            <input type="submit" value="Submit">
+                            <input type="reset" value="Reset">
+                           
+                        </div>
+                    </form>
+                   
+                    <td>
+                        <table class="list" id="emplist">
+                            <thead>
+                                <tr>
+                                    <th>EmpID</th>
+                                    <th>Employee Name</th>
+                                    <th>Designation</th>
+                                    <th>Salary</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                            </tbody>
+                    
+                        </table>
+                    </td>
+
+                </td>
+            </tr>
+        </table>
+
+        <script type="text/javascript" src="tscript.js"></script>
+    </body>
+</html>

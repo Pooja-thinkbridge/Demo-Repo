@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="table.css">
+    </head>
+    <body>
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Profile</th>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+                <th scope="col">Username</th>
+                
+              </tr>
+            </thead>
+            <tbody id="mytable">
+              <tr>
+                <th scope="row" colspan="5">Loading...</th>
+              </tr>
+            </tbody>
+          </table>
+        
+        <script>
+     fetch('https://www.mecallapi.com/api/users')
+    .then(res => res.json())
+    .then((obj) => {display(obj) ;
+       
+
+}).catch(err => console.error(err));
+
+
+function display(objects)
+{
+    console.log('Output: ', objects);
+
+var trHTML='';
+for (let object of objects) {
+trHTML += '<tr>'; 
+trHTML += '<td>'+object['id']+'</td>';
+trHTML += '<td><img width="50px" src="'+object['avatar']+'" class="avatar"></td>';
+trHTML += '<td>'+object['fname']+'</td>';
+trHTML += '<td>'+object['lname']+'</td>';
+trHTML += '<td>'+object['username']+'</td>';
+
+
+trHTML += "</tr>";
+}
+document.getElementById("mytable").innerHTML = trHTML;
+}
+
+        </script>
+    </body>
+</html>

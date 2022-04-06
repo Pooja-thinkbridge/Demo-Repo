@@ -1,0 +1,18 @@
+table
+{
+    width: 80%;
+    margin: 40px auto;
+    background:rgb(143, 178, 183) ;
+}
+ 
+.table
+{
+    text-align: center;
+    width: 100%;
+}
+
+td{
+    border: 1px solid blueviolet;
+    text-align: left;
+    padding: 8px 15px;
+}
