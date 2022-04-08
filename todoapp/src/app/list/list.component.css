@@ -1,0 +1,47 @@
+table
+{
+    width: 80%;
+    margin: 30px auto;
+    background:rgb(143, 178, 183) ;
+}
+ 
+.list
+{
+    text-align: center;
+    width: 70%;
+}
+
+td{
+    border: 1px solid blueviolet;
+    text-align: left;
+    padding: 8px 10px;
+    padding-right: 0;
+    
+}
+
+tr:nth-child(even), .list thead > tr{
+    background-color: aliceblue;
+}
+
+button
+{
+    background-color: plum;
+    padding: 6px 12px;
+    margin-left: 30px;
+    margin: 15px 0 10px;
+    display: inline-block;
+    border: 1px solid purple;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+
+}
+.box
+{
+    margin: 0;
+    text-align: center;
+}
+button:hover
+{
+    background-color:darkseagreen;
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <div class="box">
+            <h3>Update TODO</h3>
+
+            <div class="form-group">
+                <input type="text" [(ngModel)]="todo.id" class="form-control" placeholder={{todo.id}} readonly >
+            </div>
+        
+            <div class="form-group">
+                <input type="text" [(ngModel)]="todo.title" class="form-control" placeholder={{todo.title}} >
+            </div>
+
+            <div class="form-group">
+                <input type="text" [(ngModel)]="todo.date" class="form-control" placeholder={{todo.date}}>
+            </div>
+
+        <div>
+            <button (click)="edit(todo.id, todo)">Update</button>
+        </div>
+         
+        
+        </div>
+        
+    </body>
+</html>

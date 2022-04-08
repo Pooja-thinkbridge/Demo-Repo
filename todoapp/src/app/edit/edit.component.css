@@ -1,0 +1,27 @@
+input[type = "text"]
+{
+    width: 51%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid powderblue;
+    border-radius: 4px;
+}
+
+button
+{
+    background-color: plum;
+    padding: 6px 12px;
+    margin: 15px 0 10px;
+    display: inline-block;
+    border: 1px solid purple;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+
+}
+.box
+{
+    margin: 0;
+    text-align: center;
+}
