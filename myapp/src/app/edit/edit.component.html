@@ -1,2 +1,115 @@
-<p>Home component works!</p>
-<router-outlet></router-outlet>
+
+<section class="vh-100" style="background-color: #eee;">
+    <div class="container h-100">
+    <br>
+         <p class="h1 bold ">Sign up</p>
+         <p class="h6 bold">Please fill in this form to create an account.</p>
+      
+         <hr>
+       
+            <div class="container w-50 p-3"  style="  background: -webkit-linear-gradient(left, #a445b2, #fa4299);">
+           <form [formGroup]="regForm" (ngSubmit)="getData()">
+            <br>
+               <div class="form-group input-group h-100 w-100">
+                    <div class="input-group-text">
+                        <span class="input-group"><i class="fa fa-user"></i></span>
+                    </div>
+                    <input name="" class="form-control" placeholder="Full name" type="text" formControlName="fname"
+                    [ngClass]="{ 'is-invalid': f['fname'].errors }" />
+                    <div *ngIf="f['fname'].errors" class="invalid-feedback">
+                        <div *ngIf="f['fname'].errors['pattern']">Fullname must be in alphabates only</div>
+                        <div *ngIf="f['fname'].errors['required']">Fullname is required</div>
+                        <div *ngIf="f['fname'].errors['minlength']">
+                            Fullname must be at least 6 characters
+                          </div>
+                          <div *ngIf="f['fname'].errors['maxlength']">
+                            Fullname must not exceed 20 characters
+                          </div>
+                      </div>
+
+               </div>
+               <br>
+
+               <div class="form-group input-group w-100">
+                <div class="input-group-text">
+                    <span class="input-group"> <i class="fa fa-envelope"></i> </span>
+                 </div>
+                <input name="" class="form-control" placeholder="Email address" type="email" formControlName="email"
+                [ngClass]="{ 'is-invalid': f['email'].errors }"
+                />
+                <div *ngIf="f['email'].errors" class="invalid-feedback">
+                    <div *ngIf="f['email'].errors['required']">Email is required</div>
+                    <div *ngIf="f['email'].errors['email']">Email is invalid</div>
+                  </div>
+
+            </div> 
+            <br>
+
+            <div class="form-group input-group h-100 w-100">
+                <div class="input-group-text">
+                    <span class="input-group"><i class="fa fa-lock"></i></span>
+                </div>
+                <input name="" class="form-control" placeholder="Create Password" type="password" formControlName="passwd"
+                [ngClass]="{ 'is-invalid': f['fname'].errors }"/>
+                <div *ngIf="f['passwd'].errors" class="invalid-feedback">
+                <div *ngIf="f['passwd'].errors['required']">Password is required</div>
+                <div *ngIf="f['passwd'].errors['minlength']">Password must be 6char long</div>
+                <div *ngIf="f['passwd'].errors['maxlength']">Password must not exceed 30char</div>
+                </div>
+           </div>
+           <br>
+
+           <div class="form-group input-group h-100 w-100">
+            <div class="input-group-text">
+                <span class="input-group"><i class="fa fa-phone"></i></span>
+            </div>
+            <input type="tel" class="form-control" placeholder="Phone number" formControlName="mob"
+            [ngClass]="{ 'is-invalid': f['mob'].errors }" />
+            <div *ngIf="f['mob'].errors" class="invalid-feedback">
+                <div *ngIf="f['mob'].errors['pattern']">Mobile no must be in Numbers only</div>
+                <div *ngIf="f['mob'].errors['required']">Mobile no is required</div>
+                <div *ngIf="f['mob'].errors['minlength']">
+                    Mobile no must be at least 10 digits
+                  </div>
+                  <div *ngIf="f['mob'].errors['maxlength']">
+                    Mobile no must be at least 10 digits
+                  </div>
+              </div>
+
+       </div>
+       <br>
+
+       <div class="form-group input-group h-100 w-100">
+        <div class="input-group-text">
+            <span class="input-group"><i class="fa fa-address-book"></i></span>
+        </div>
+        <input type="text" class="form-control" placeholder="Address" formControlName="addr"
+        [ngClass]="{ 'is-invalid': f['addr'].errors }"/>
+        <div *ngIf="f['addr'].errors" class="invalid-feedback">
+        <div *ngIf="f['addr'].errors['required']">Address is required</div>
+        <div *ngIf="f['addr'].errors['minlength']">Address must be 6char long</div>
+        <div *ngIf="f['addr'].errors['maxlength']">Address must not exceed 50char</div>
+        </div>
+   </div>
+   <br>
+   <div class="form-group">
+    <button type="submit" class="btn btn-primary">Register</button>
+    <button
+      type="button"
+      (click)="onReset()"
+      class="btn btn-warning float-right" >
+      Reset
+    </button>
+  </div>
+       <br>
+           </form>
+           
+        </div>
+
+
+        
+     
+         </div>
+
+    
+</section>
