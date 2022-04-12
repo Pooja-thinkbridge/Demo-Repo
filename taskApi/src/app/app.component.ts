@@ -5,15 +5,6 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent{
-  display = "none";
-  openModal() {
-    this.display = "block";
-  }
-  onCloseHandled() {
-    this.display = "none";
-  }
-
+export class AppComponent {
+  title = 'taskApi';
 }
-
-

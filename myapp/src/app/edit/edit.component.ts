@@ -8,6 +8,17 @@ import { AbstractControl, FormBuilder, FormControl, FormGroup, Validators } from
 })
 export class EditComponent implements OnInit {
   regForm: FormGroup;
+  display: string = 'none';
+  obj !:any;
+
+
+  openModal() {
+    this.display = "block";
+    this.obj = this.regForm.value
+  }
+  onCloseHandled() {
+    this.display = "none";
+  }
 
   constructor(private frm : FormBuilder) {
     this.regForm = frm.group({

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<body>
+    <div class="container">
+        <h1 style="text-align: center;    background-color: rgb(255, 102, 0);" class="bold">News</h1>
+        <table class="itemlist" style="margin: auto;">
+        
+
+            <tbody  *ngFor="let story of story;  let i = index" >
+                <tr>
+                
+    <td class="title">
+        <span>{{i + 1}}</span></td> 
+         <td >
+            &lAarr;
+                </td>
+                <td class="title">
+                    <a href="{{story.url}}">
+                    {{story.title}}</a>
+    
+                </td>
+                </tr>
+                <tr>
+                    <td colspan="2"></td>
+                    <td class="subtext">
+                    <span class="score">{{story.score}} point  </span>
+                    <span> by {{story.by}}</span> |
+                    <span class="score">{{story.kids}} comments  </span> |
+                    <a>hide</a> |
+                    <a>past</a> |
+                    <a>discuss</a>   
+                    </td>
+                </tr>
+                <tr class="spacer" style="height: 6px;"></tr>
+            
+            
+   
+
+</tbody></table>
+    </div>
+</body>
+
+
+<!-- <tr><td colspan="2"></td>
+    <td class="subtext">
+<span class="score">{{story.score}} point  </span>
+
+
+<span> by {{story.type}}</span> |
+<a>hide</a> |
+<a>past</a> |
+<a>discuss</a>   
+</td></tr> -->
